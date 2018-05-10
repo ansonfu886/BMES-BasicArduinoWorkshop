@@ -219,6 +219,7 @@ void loop() {
   delayPeriod = delayPeriod + 100;
   if (delayPeriod > ...)
   {
+    delay(...);
     delayPeriod = 100;
   }
 }
@@ -248,4 +249,21 @@ void loop() {
 }
 ```
 #### 3.8.3 for loop example
+```C++
+const int LEDpin = ...;
+int delayPeriod = 500;
+void setup() {
+  pinMode(...);
+}
 
+void loop() {
+  
+  for (int ... ; ... ; ...) {
+    digitalWrite(...);
+    delay(...);
+    digitalWrite(...);
+    delay(...);
+  }
+    ...
+}
+```

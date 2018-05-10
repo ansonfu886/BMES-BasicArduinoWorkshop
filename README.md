@@ -107,9 +107,32 @@ assignment operator tells the program to put whatever is on the right side of th
 sign into the variable on the left side.
 
 ### 3.3 Variable Data Types
-* void: The void keyword is used only in function declarations. It indicates that the
+* **void**: The void keyword is used only in function declarations. It indicates that the
 function is expected to return no information to the function from which it was called.
-
+* **boolean**: A Boolean holds one of two values, true or false. Each Boolean variable occupies
+one byte of memory.
+* **char**: A data type that takes up one byte of memory that stores a character value.
+Character literals are written in single quotes like this: 'A'. For multiple characters, strings
+use double quotes: "ABC".
+* **byte**: A byte stores an 8-bit unsigned number, from 0 to 255.
+* **int**: int stores a 16-bit (2-byte) value. This yields a range of -32,768 to 32,767.
+* **unsigned int**: unsigned ints (unsigned integers) are the same as ints in that they store
+a 2 byte value. Instead of storing negative numbers, they only store positive values, yielding
+a useful range of 0 to 65,535.
+* **long**: long variables are extended size variables for number storage, and store 32 bits (4
+bytes), from -2,147,483,648 to 2,147,483,647.
+* **unsigned long**: Unsigned long variables are extended size variables for number
+storage, and store 32 bits (4 bytes). Unlike standard longs unsigned longs won't store
+negative numbers, making their range from 0 to 4,294,967,295.
+* **float**: Floating-point numbers are numbers that have a decimal point. Floating-point
+numbers are often used to approximate analog and continuous values because they have
+greater resolution than integers. Floating-point numbers can be as large as 3.4028235E+38
+and as low as -3.4028235E+38. They are stored as 32 bits (4 bytes) of information.
+* **double**: Double precision floating point number. On the Uno, this occupies 4 bytes. That is,
+the double implementation is exactly the same as the float, with no gain in precision.
+* **string**: Text strings can be represented in two ways. you can use the String data type,
+which is part of the core as of version 0019, or you can make a string out of an array of
+type char and null-terminate it.
 
 ### 3. Functions
 For controlling the Arduino board and performing computations. Segmenting code into functions allows a programmer to create modular pieces of code that perform a defined task and then return to the area of code from which the function was "called". The typical case for creating a function is when one needs to perform the same action multiple times in a program.

@@ -162,7 +162,7 @@ are two different ways of marking a line as a comment:
 
 ### 3.7 Functions
 For controlling the Arduino board and performing computations. Segmenting code into functions allows a programmer to create modular pieces of code that perform a defined task and then return to the area of code from which the function was "called". Functions help the programmer stay organized.</br>
-#### 3.7.1 Fuction Example: </br>
+#### 3.7.1 Fuction Example </br>
 ```C++
 void setup(){
 Serial.begin(9600);
@@ -176,4 +176,24 @@ int c = a + b;
 return c;
 }
 ```
+#### 3.7.2 Long way without function </br>
+```C++
+void setup(){
+Serial.begin(9600);
+int a = 1;
+int b = 2;
+int c = a + b;
+Serial.println(c);
+a=3;
+b=4;
+c = a + b;
+Serial.println(c);
+}
+void loop(){
+}
+```
+
+
+
+
 

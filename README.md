@@ -14,14 +14,6 @@ This workshop is based on ARDUINO IDE 1.8.5, ARDUINO UNO R3 Board and assumes ze
 **Where?**: TR +27, The Hive, Nanyang Technological University</br>
 **Who?**: NTU Biomedical Engineering Society
 
-### Questions?
-
-Raise your hand at any time during the workshop or shoot me an [e-mail](mailto:askbmes@gmail.com) later.
-
-### Errors?
-
-If you find any mistake (typo or anything else), please make a pull request or [post an issue](https://github.com/ansonfu886/BMES-BasicArduinoWorkshop/issues/new)! Thanks!
-
 <hr>
 
 ## Step 0 - Initial Setup
@@ -192,8 +184,21 @@ void setup(){
 void loop(){
 }
 ```
+#### Task 2 LED Blink
+```C++
+const int LEDpin = 2;
 
+void setup() {
+  pinMode(LEDpin,OUTPUT);
+}
 
+void loop() {
+  digitalWrite(LEDpin,HIGH);
+  delay(1000);
+  digitalWrite(LEDpin,LOW);
+  delay(1000);
+}
+```
 
 
 

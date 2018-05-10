@@ -77,7 +77,7 @@ we call these signals HIGH or LOW, respectively.
 
 ### Task 1 Set up LED
 ![LEDschematic](image/Breadboard/LEDschematic.jpg)
-![LED](image/Breadboard/LED.jpg =250x250)
+![LED](image/Breadboard/LED.jpg)
 
 ## Step 3 - Introduction to C++ Programming
 

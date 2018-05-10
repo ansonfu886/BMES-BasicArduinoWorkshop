@@ -37,4 +37,12 @@ If you find any mistake (typo or anything else), please make a pull request or [
 
 ### 1.1 What is Arduino? Why Arduino?
 Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs and turn it into an output. </br>
-Arduino boards are relatively inexpensive compared to other microcontroller platforms.
+Arduino boards are relatively inexpensive compared to other microcontroller platforms. The Arduino Software (IDE) is easy-to-use for beginners, yet flexible enough for advanced users to take advantage of as well.
+
+### 1.2 Arduino integrated development environment (IDE)
+In this workshop, we will be using the Arduino IDE to write code to program the Arduino board.
+The Arduino IDE is a cross-platform application provides a text editor with the typical IDE
+features like syntax highlighting, a compiler to compile and upload code to the board.
+A program written with the Arduino IDE is called a sketch. Sketches are saved on the
+development computer as text files with the file extension ".ino". The Arduino IDE utilises C++
+as its programming language and contains various libraries catered to the Arduino.

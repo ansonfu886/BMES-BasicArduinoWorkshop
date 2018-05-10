@@ -88,5 +88,10 @@ start using libraries. The setup function will only run once, after each power u
 Arduino board. The loop() function loops consecutively, allowing your program to change and
 respond. It is used to actively control the Arduino board.
 
-### 3.2 Functions
+### 3.2 Variables
+#### 3.2.1 Variables and constants: 
+A variable is a way of naming and storing a value for later use by the program, such as
+data from a sensor or an intermediate value used in a calculation.
+
+### 3. Functions
 For controlling the Arduino board and performing computations. Segmenting code into functions allows a programmer to create modular pieces of code that perform a defined task and then return to the area of code from which the function was "called". The typical case for creating a function is when one needs to perform the same action multiple times in a program.

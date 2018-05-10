@@ -47,3 +47,5 @@ A program written with the Arduino IDE is called a sketch. Sketches are saved on
 development computer as text files with the file extension ".ino". The Arduino IDE utilises C++
 as its programming language and contains various libraries catered to the Arduino.</br>
 ![sketch image](image/sketch.JPG)
+
+### 1.3 The Arduino Board (UNO)

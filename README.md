@@ -77,4 +77,4 @@ we call these signals HIGH or LOW, respectively.
 
 ### Task 1 Set up LED
 ![LEDschematic](image/Breadboard/LEDschematic.jpg)
-![LED](image/Breadboard/LED.jpg)
+![LED](image/Breadboard/LED.jpg | width=100)

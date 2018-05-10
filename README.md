@@ -49,4 +49,4 @@ as its programming language and contains various libraries catered to the Arduin
 ![sketch image](image/sketch.JPG)
 
 ### 1.3 The Arduino Board (UNO)
-![Arduino_Board](image/Labellings/Arduino Board.png)
+![Arduino_Board](Labellings/Arduino Board.png)

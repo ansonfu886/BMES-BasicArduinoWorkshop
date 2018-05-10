@@ -36,5 +36,5 @@ If you find any mistake (typo or anything else), please make a pull request or [
 ## Step 1 - Introduction of Arduino
 
 ### 1.1 What is Arduino? Why Arduino?
-Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs and turn it into an output. 
+Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs and turn it into an output. </br>
 Arduino boards are relatively inexpensive compared to other microcontroller platforms.

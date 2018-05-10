@@ -138,10 +138,10 @@ type char and null-terminate it.
 Special attention is brought to strings because in C++, strings are actually character arrays. </br>
 ```C++
 void setup(){
-Serial.begin(9600);
-char Str1[7] = {'a', 'r', 'd', 'u', 'i', 'n', 'o'};
-char Str2[7] = "arduino";
-Serial.println(Str1);
+  Serial.begin(9600);
+  char Str1[7] = {'a', 'r', 'd', 'u', 'i', 'n', 'o'};
+  char Str2[7] = "arduino";
+  Serial.println(Str1);
 }
 ```
 ### 3.5 C++ comments
@@ -165,29 +165,29 @@ For controlling the Arduino board and performing computations. Segmenting code i
 #### 3.7.1 Fuction Example </br>
 ```C++
 void setup(){
-Serial.begin(9600);
-Serial.println(myFunc(1,2));
-Serial.println(myFunc(3,4));
+  Serial.begin(9600);
+  Serial.println(myFunc(1,2));
+  Serial.println(myFunc(3,4));
 }
 void loop(){
 }
-int myFunc(int a,int b){
-int c = a + b;
-return c;
+  int myFunc(int a,int b){
+  int c = a + b;
+  return c;
 }
 ```
 #### 3.7.2 Long way without function </br>
 ```C++
 void setup(){
-Serial.begin(9600);
-int a = 1;
-int b = 2;
-int c = a + b;
-Serial.println(c);
-a=3;
-b=4;
-c = a + b;
-Serial.println(c);
+  Serial.begin(9600);
+  int a = 1;
+  int b = 2;
+  int c = a + b;
+  Serial.println(c);
+  a=3;
+  b=4;
+  c = a + b;
+  Serial.println(c);
 }
 void loop(){
 }

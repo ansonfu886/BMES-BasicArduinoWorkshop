@@ -136,14 +136,14 @@ type char and null-terminate it.
 
 ### 3.4 Strings/Char Arrays
 Special attention is brought to strings because in C++, strings are actually character arrays. </br>
-'''
+```C++
 void setup(){
 Serial.begin(9600);
 char Str1[7] = {'a', 'r', 'd', 'u', 'i', 'n', 'o'};
 char Str2[7] = "arduino";
 Serial.println(Str1);
 }
-'''
+```
 ### 3.5 C++ comments
 Comments are lines in the program that are used to inform yourself or others about the way
 the program works. They are ignored by the compiler, and not exported to the processor, so

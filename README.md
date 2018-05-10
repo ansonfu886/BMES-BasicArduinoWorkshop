@@ -106,7 +106,9 @@ value one wishes to store with the assignment operator (single equal sign). The
 assignment operator tells the program to put whatever is on the right side of the equal
 sign into the variable on the left side.
 
-
+### 3.3 Variable Data Types
+* void: The void keyword is used only in function declarations. It indicates that the
+function is expected to return no information to the function from which it was called.
 
 
 ### 3. Functions

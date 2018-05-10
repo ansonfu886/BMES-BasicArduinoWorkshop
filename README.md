@@ -92,6 +92,22 @@ respond. It is used to actively control the Arduino board.
 #### 3.2.1 Variables and constants: 
 A variable is a way of naming and storing a value for later use by the program, such as
 data from a sensor or an intermediate value used in a calculation.
+#### 3.2.2 Variable Scope:
+Another important choice that programmers face is where to declare variables. The
+specific place that variables are declared influences how various functions in a program
+will see the variable. This is called variable scope.
+#### 3.2.3 Initializing Variables:
+Variables may be initialized (assigned a starting value) when they are declared or not. It
+is always good programming practice however to double check that a variable has valid
+data in it, before it is accessed for some other purpose.
+#### 3.2.4 Using Variables:
+Once variables have been declared, they are used by setting the variable equal to the
+value one wishes to store with the assignment operator (single equal sign). The
+assignment operator tells the program to put whatever is on the right side of the equal
+sign into the variable on the left side.
+
+
+
 
 ### 3. Functions
 For controlling the Arduino board and performing computations. Segmenting code into functions allows a programmer to create modular pieces of code that perform a defined task and then return to the area of code from which the function was "called". The typical case for creating a function is when one needs to perform the same action multiple times in a program.

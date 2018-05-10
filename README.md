@@ -45,5 +45,5 @@ The Arduino IDE is a cross-platform application provides a text editor with the 
 features like syntax highlighting, a compiler to compile and upload code to the board. </br>
 A program written with the Arduino IDE is called a sketch. Sketches are saved on the
 development computer as text files with the file extension ".ino". The Arduino IDE utilises C++
-as its programming language and contains various libraries catered to the Arduino.
+as its programming language and contains various libraries catered to the Arduino.</br>
 ![sketch image](image/sketch.JPG)

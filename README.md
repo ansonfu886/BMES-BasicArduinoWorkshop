@@ -276,6 +276,8 @@ void loop() {
 
 ## Step 4 Activities
 ### 4.1 Activity 1: LED Fade
+In this activity, we will use Pulse Width Modulation, or PWM, to control the brightness of the
+LED. By varying the brightness of the LED continuously, a fading effect can be created.
 ```C++
 const int LEDpin = ...;
 
@@ -323,16 +325,16 @@ void loop() {
 ![switch](image/Breadboard/Switchbreadboard.jpg)
 ```C++
 const int buttonPin = 2;     // the number of the pushbutton pin
-const int ledPin =  13;      // the number of the LED pin
+const int LEDPin =  13;      // the number of the LED pin
  
 // variables will change:
-int buttonState = 0;         // variable for reading the pushbutton status
+int buttonState = LOW;         // variable for reading the pushbutton status
  
 void setup() {
   // initialize the LED pin as an output:
-  pinMode(ledPin, OUTPUT);
+  pinMode(...);
   // initialize the pushbutton pin as an input:
-  pinMode(buttonPin, INPUT);
+  pinMode(...);
 }
  
 void loop() {
@@ -341,12 +343,14 @@ void loop() {
  
   // check if the pushbutton is pressed.
   // if it is, the buttonState is HIGH:
-  if (buttonState == HIGH) {
+  if (...) {
     // turn LED on:
-    digitalWrite(ledPin, HIGH);
+    digitalWrite(...);
   } else {
     // turn LED off:
-    digitalWrite(ledPin, LOW);
+    digitalWrite(...);
   }
 }
 ```
+
+### 4.3 Activity 3: Press to turn on LED, press to turn off LED

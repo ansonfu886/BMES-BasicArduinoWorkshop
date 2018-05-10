@@ -78,3 +78,12 @@ we call these signals HIGH or LOW, respectively.
 ### Task 1 Set up LED
 ![LEDschematic](image/Breadboard/LEDschematic.jpg)
 ![LED](image/Breadboard/LED.jpg =250x250)
+
+## Step 3 - Introduction to C++ Programming
+
+### 3.1 Anatomy of a Sketch:
+There are two functions that have to be in every sketch. They are Setup() and Loop(). The
+setup() function is called when a sketch starts. It is used to initialize the variables, pin modes,
+start using libraries. The setup function will only run once, after each power up or reset of the
+Arduino board. The loop() function loops consecutively, allowing your program to change and
+respond. It is used to actively control the Arduino board.

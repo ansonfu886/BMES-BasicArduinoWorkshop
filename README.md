@@ -61,7 +61,7 @@ as its programming language and contains various libraries catered to the Arduin
 direction. Current trying to flow the reverse direction is blocked. Diodes have polarity, so do
 take of the polarity when connecting them up. 
 </br>E.g. Light Emitting Diode(LED): ![LED](image/Diode.png)
-2. Resistors : To reduce current flow, adjust signal levels and to divide voltages.
+2. Resistors : To reduce current flow, adjust signal levels and to divide voltages.</br>
 ![resistor](image/Resistor.png)
-3. Solderless Breadboard
+3. Solderless Breadboard</br>
 ![bread](image/Breadboard.png)

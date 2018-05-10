@@ -24,6 +24,9 @@ If you find any mistake (typo or anything else), please make a pull request or [
 
 <hr>
 
-## Task 0 - Initial Setup
+## Step 0 - Initial Setup
 
 1. Download [ARDUINO IDE](https://www.arduino.cc/en/Main/Software).
+2. Pair up as a team.
+3. Make sure your team has one Arduino UNO board with USE cable and solderless breadboard.
+4. Turn on Arduino IDE and move on to St 1

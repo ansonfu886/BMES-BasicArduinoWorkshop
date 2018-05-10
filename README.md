@@ -134,5 +134,14 @@ the double implementation is exactly the same as the float, with no gain in prec
 which is part of the core as of version 0019, or you can make a string out of an array of
 type char and null-terminate it.
 
+### 3.4 C++ comments
+Comments are lines in the program that are used to inform yourself or others about the way
+the program works. They are ignored by the compiler, and not exported to the processor, so
+they don't take up any space on the chip. Comments only purpose are to help you understand
+(or remember) how your program works or to inform others how your program works. There
+are two different ways of marking a line as a comment:
+● Single line comment: Denoted by “//”.
+● Multi-line comment: Denoted by “/*” and “*/”.
+
 ### 3. Functions
 For controlling the Arduino board and performing computations. Segmenting code into functions allows a programmer to create modular pieces of code that perform a defined task and then return to the area of code from which the function was "called". The typical case for creating a function is when one needs to perform the same action multiple times in a program.

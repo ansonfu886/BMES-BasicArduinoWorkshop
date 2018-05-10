@@ -51,3 +51,11 @@ as its programming language and contains various libraries catered to the Arduin
 ### 1.3 The Arduino Board (UNO)
 ![Arduino_Board](image/Labellings/ArduinoBoard.png)
 ![Arduino_Board Labellings](image/Labellings/ArduinoBoardLabellings.PNG)
+
+<hr>
+
+## Step 2 - Electronic Prototyping
+1. Diodes: Current passing through a diode can only go in one direction, called the forward
+direction. Current trying to flow the reverse direction is blocked. Diodes have polarity, so do
+take of the polarity when connecting them up. E.g. Light Emitting Diode(LED)
+![LED](image/Diode.png)

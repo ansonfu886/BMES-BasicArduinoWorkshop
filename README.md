@@ -184,21 +184,68 @@ void setup(){
 void loop(){
 }
 ```
-#### Task 2 LED Blink
+### Task 2 LED Blink
 ```C++
-const int LEDpin = 2;
+const int LEDpin = ...;
 
 void setup() {
-  pinMode(LEDpin,OUTPUT);
+  pinMode(...);
 }
 
 void loop() {
-  digitalWrite(LEDpin,HIGH);
-  delay(1000);
-  digitalWrite(LEDpin,LOW);
-  delay(1000);
+  digitalWrite(...);
+  delay(...);
+  digitalWrite(...);
+  delay(...);
 }
 ```
 
+### 3.8 Control Structures
+We will use the LED Blink code above to introduce you different types of control structures.
+</br>
+#### 3.8.1 if statement example
+```C++
+const int LEDpin = ...;
+int delayPeriod = 100;
+void setup() {
+  pinMode(...);
+}
 
+void loop() {
+  digitalWrite(...);
+  delay(...);
+  digitalWrite(...);
+  delay(...);
+  delayPeriod = delayPeriod + 100;
+  if (delayPeriod > ...)
+  {
+    delayPeriod = 100;
+  }
+}
+```
+#### 3.8.2 if-else statement example
+```C++
+const int LEDpin = ...;
+int delayPeriod = 500;
+int i = 0;
+void setup() {
+  pinMode(...);
+}
+
+void loop() {
+  
+  if (i < ...){
+    digitalWrite(...);
+    delay(...);
+    digitalWrite(...);
+    delay(...);
+    ...;
+  }
+  else{
+    delay(...);
+    i=...;
+  }
+}
+```
+#### 3.8.3 for loop example
 

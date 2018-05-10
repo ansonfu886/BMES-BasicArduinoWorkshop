@@ -160,5 +160,20 @@ are two different ways of marking a line as a comment:
 ![BO](image/Operators/BitwiseOperator.PNG)
 ![CdO](image/Operators/CompoundOperator.PNG)
 
-### 3. Functions
-For controlling the Arduino board and performing computations. Segmenting code into functions allows a programmer to create modular pieces of code that perform a defined task and then return to the area of code from which the function was "called". The typical case for creating a function is when one needs to perform the same action multiple times in a program.
+### 3.7 Functions
+For controlling the Arduino board and performing computations. Segmenting code into functions allows a programmer to create modular pieces of code that perform a defined task and then return to the area of code from which the function was "called". Functions help the programmer stay organized.</br>
+#### 3.7.1 Fuction Example: </br>
+```C++
+void setup(){
+Serial.begin(9600);
+Serial.println(myFunc(1,2));
+Serial.println(myFunc(3,4));
+}
+void loop(){
+}
+int myFunc(int a,int b){
+int c = a + b;
+return c;
+}
+```
+

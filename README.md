@@ -74,3 +74,7 @@ we call these signals HIGH or LOW, respectively.
 
 ### 2.3 Electrical Concepts
 ![OhmLaw](image/OhmLaw.jpg)
+
+### Task 1 Set up LED
+![LEDschematic](image/Breadboard/LEDschematic.jpg)
+![LED](image/Breadboard/LED.jpg)

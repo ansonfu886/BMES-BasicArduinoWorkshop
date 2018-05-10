@@ -57,5 +57,5 @@ as its programming language and contains various libraries catered to the Arduin
 ## Step 2 - Electronic Prototyping
 1. Diodes: Current passing through a diode can only go in one direction, called the forward
 direction. Current trying to flow the reverse direction is blocked. Diodes have polarity, so do
-take of the polarity when connecting them up. E.g. Light Emitting Diode(LED)
-![LED](image/Diode.png)
+take of the polarity when connecting them up. 
+E.g. Light Emitting Diode(LED) ![LED](image/Diode.png)

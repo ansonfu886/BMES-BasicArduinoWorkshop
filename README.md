@@ -23,3 +23,7 @@ Raise your hand at any time during the workshop or shoot me an [e-mail](mailto:a
 If you find any mistake (typo or anything else), please make a pull request or [post an issue](https://github.com/ansonfu886/BMES-BasicArduinoWorkshop/issues/new)! Thanks!
 
 <hr>
+
+## Task 0 - Initial Setup
+
+1. Download [ARDUINO IDE](https://www.arduino.cc/en/Main/Software).

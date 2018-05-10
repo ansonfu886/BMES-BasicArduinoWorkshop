@@ -141,7 +141,7 @@ they don't take up any space on the chip. Comments only purpose are to help you 
 (or remember) how your program works or to inform others how your program works. There
 are two different ways of marking a line as a comment:
 </br>● Single line comment: Denoted by “//”.
-</br>● Multi-line comment: Denoted by “/*” and “*/”.
+</br>● Multi-line comment: Denoted by “/* ” and “ */”.
 
 ### 3. Functions
 For controlling the Arduino board and performing computations. Segmenting code into functions allows a programmer to create modular pieces of code that perform a defined task and then return to the area of code from which the function was "called". The typical case for creating a function is when one needs to perform the same action multiple times in a program.

@@ -71,3 +71,7 @@ circuit can have two states: ON or OFF. In binary, ON means 1 and OFF means 0. I
 we call these signals HIGH or LOW, respectively.
 </br>
 ![LL](image/LogicLevel.PNG)
+
+### 2.3 Electrical Concepts
+</br>
+![Law](image/OhmLaw.jpg)

@@ -74,4 +74,4 @@ we call these signals HIGH or LOW, respectively.
 
 ### 2.3 Electrical Concepts
 </br>
-![Law](image/OhmLaw.jpg)
+![OhmLaw](image/OhmLaw.jpg)

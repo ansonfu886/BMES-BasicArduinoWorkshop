@@ -28,11 +28,12 @@ If you find any mistake (typo or anything else), please make a pull request or [
 
 1. Download [ARDUINO IDE](https://www.arduino.cc/en/Main/Software).
 2. Pair up as a team.
-3. Make sure your team has one Arduino UNO board with USE cable and solderless breadboard.
+3. Make sure your team has one Arduino UNO board with USB cable and solderless breadboard.
 4. Turn on Arduino IDE and move on to Step 1 !
 
 <hr>
 
 ## Step 1 - Introduction of Arduino
 
-
+1.1 What is Arduino? Why Arduino?
+  Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs and turn it into an output. 

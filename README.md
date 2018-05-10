@@ -186,17 +186,20 @@ void loop(){
 ```
 ### Task 2 LED Blink
 ```C++
-const int LEDpin = ...;
+const int LEDpin = ...;   // the digital pin the LED is attached to
 
+// the setup routine runs once when you press reset:
 void setup() {
+  // declare LEDpin to be an output:
   pinMode(...);
 }
 
+// the loop routine runs over and over again forever:
 void loop() {
-  digitalWrite(...);
-  delay(...);
-  digitalWrite(...);
-  delay(...);
+  digitalWrite(...);    // turn the LED on (HIGH is the voltage level)
+  delay(...);           // wait for a second
+  digitalWrite(...);    // turn the LED off by making the voltage LOW
+  delay(...);           // wait for a second
 }
 ```
 
@@ -206,7 +209,8 @@ We will use the LED Blink code above to introduce you different types of control
 #### 3.8.1 if statement example
 ```C++
 const int LEDpin = ...;
-int delayPeriod = 100;
+int delayPeriod = 1000;   //set the initial value for 'delayPeriod' as 1000
+
 void setup() {
   pinMode(...);
 }
@@ -216,19 +220,20 @@ void loop() {
   delay(...);
   digitalWrite(...);
   delay(...);
-  delayPeriod = delayPeriod + 100;
-  if (delayPeriod > ...)
+  delayPeriod = delayPeriod + 100;    // increase the delay timing by 0.1 second through the loop:
+  if (delayPeriod > ...)    //Check the condition of 'if statement', if True, run 'if statement', if False, return.
   {
     delay(...);
-    delayPeriod = 100;
+    delayPeriod = 1000;   //reset the value of delayPeriod
   }
 }
 ```
 #### 3.8.2 if-else statement example
 ```C++
 const int LEDpin = ...;
-int delayPeriod = 500;
-int i = 0;
+int delayPeriod = 1000;
+int i = 0;    //set a condition variable 'i' as 0
+
 void setup() {
   pinMode(...);
 }
@@ -242,7 +247,7 @@ void loop() {
     delay(...);
     ...;
   }
-  else{
+  else{         //run 'else statement' when 'if statement' is False
     delay(...);
     i=...;
   }
@@ -251,19 +256,65 @@ void loop() {
 #### 3.8.3 for loop example
 ```C++
 const int LEDpin = ...;
-int delayPeriod = 500;
+int delayPeriod = 1000;
+
 void setup() {
   pinMode(...);
 }
 
 void loop() {
   
-  for (int ... ; ... ; ...) {
+  for (int ... ; ... ; ...) { //delare variable; loop & check condition ; action for each loop
     digitalWrite(...);
     delay(...);
     digitalWrite(...);
     delay(...);
   }
     ...
+}
+```
+
+## Step 4 Activities
+### 4.1 Activity 1: LED Fade
+```C++
+const int LEDpin = ...;
+
+void setup() {
+  pinMode(LEDpin, OUTPUT);
+  }
+
+void loop() {
+  for (int ...){
+  analogWrite(...);
+  delay(5);
+  }
+  for (int i = 255; i > 0; i--){
+  analogWrite(LEDpin, i);
+  delay(5);
+  }
+}
+```
+#### Alternatively
+```C++
+int led = ...;           
+int brightness = 0;     // how bright the LED is
+int fadeAmount = 5;    // how many points to fade the LED by
+
+void setup() {
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  analogWrite(led, brightness);
+
+  // change the brightness for next time through the loop:
+  brightness = brightness + fadeAmount;
+
+  // reverse the direction of the fading at the ends of the fade:
+  if (brightness <= 0 || brightness >= 255) {
+    fadeAmount = -fadeAmount;
+  }
+  // wait for 30 milliseconds to see the dimming effect
+  delay(30);
 }
 ```

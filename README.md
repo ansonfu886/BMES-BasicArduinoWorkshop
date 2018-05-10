@@ -81,9 +81,12 @@ we call these signals HIGH or LOW, respectively.
 
 ## Step 3 - Introduction to C++ Programming
 
-### 3.1 Anatomy of a Sketch:
-There are two functions that have to be in every sketch. They are Setup() and Loop(). The
+### 3.1 Anatomy of a Sketch
+There are two functions that have to be in every sketch. They are **Setup()** and **Loop()**. The
 setup() function is called when a sketch starts. It is used to initialize the variables, pin modes,
 start using libraries. The setup function will only run once, after each power up or reset of the
 Arduino board. The loop() function loops consecutively, allowing your program to change and
 respond. It is used to actively control the Arduino board.
+
+### 3.2 Functions
+For controlling the Arduino board and performing computations. Segmenting code into functions allows a programmer to create modular pieces of code that perform a defined task and then return to the area of code from which the function was "called". The typical case for creating a function is when one needs to perform the same action multiple times in a program.

@@ -209,7 +209,7 @@ We will use the LED Blink code above to introduce you different types of control
 #### 3.8.1 if statement example
 ```C++
 const int LEDpin = ...;
-int delayPeriod = 1000;   //set the initial value for 'delayPeriod' as 1000
+int delayPeriod = 500;   //set the initial value for 'delayPeriod' as 500, 0.5second
 
 void setup() {
   pinMode(...);
@@ -224,14 +224,14 @@ void loop() {
   if (delayPeriod > ...)    //Check the condition of 'if statement', if True, run 'if statement', if False, return.
   {
     delay(...);
-    delayPeriod = 1000;   //reset the value of delayPeriod
+    delayPeriod = 500;   //reset the value of delayPeriod
   }
 }
 ```
 #### 3.8.2 if-else statement example
 ```C++
 const int LEDpin = ...;
-int delayPeriod = 1000;
+int delayPeriod = 500;
 int i = 0;    //set a condition variable 'i' as 0
 
 void setup() {
@@ -256,7 +256,7 @@ void loop() {
 #### 3.8.3 for loop example
 ```C++
 const int LEDpin = ...;
-int delayPeriod = 1000;
+int delayPeriod = 500;
 
 void setup() {
   pinMode(...);
@@ -382,40 +382,5 @@ void loop() {
     time = millis();
   }
 digitalWrite(LEDPin, LEDstate);
-}
-```
-### 4.4 Activity 4: LED Ring pattern
-In this activity, the serial monitor is used to control the rate at which the LED ring lights up.
-![switch](image/Breadboard/3LED.jpg)
-```C+
-int timer = 500;
-int ledPins[] = {2,3,4};
-int pinCount = 3;
-int speedArray[] = {200,500,1000};
-String incomingByte = "";
-void setup() {
-Serial.begin(9600);
-for (int PinNo = 0; PinNo < pinCount; PinNo++) {
-pinMode(ledPins[PinNo], OUTPUT);
-}
-}
-void loop() {
-startLedRing();
-if (Serial.available() > 0) {
-incomingByte = Serial.readString();
-Serial.print("Delay set to: ");
-Serial.println(speedArray[incomingByte.toInt()]);
-setSpeed(incomingByte.toInt());
-}
-}
-void startLedRing(){
-for (int thisPin = 0; thisPin < pinCount; thisPin++) {
-digitalWrite(ledPins[thisPin], HIGH);
-delay(timer);
-digitalWrite(ledPins[thisPin], LOW);
-}
-}
-void setSpeed(int speedCount) {
-timer = speedArray[speedCount];
 }
 ```

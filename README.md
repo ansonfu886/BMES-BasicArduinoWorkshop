@@ -21,7 +21,7 @@ This workshop is based on ARDUINO IDE 1.8.5, ARDUINO UNO R3 Board and assumes ze
 1. Download [ARDUINO IDE](https://www.arduino.cc/en/Main/Software).
 2. Pair up as a team.
 3. Make sure your team has one Arduino UNO board with USB cable and solderless breadboard.
-4. Turn on Arduino IDE and move on to Step 1 !
+4. Turn on Arduino IDE.
 
 <hr>
 

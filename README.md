@@ -373,7 +373,7 @@ void setup() {
 }
 void loop() {
   buttonState = digitalRead(buttonPin);
-  if(buttonState == HIGH && millis() - time > debounce) { /*millis():Returns the number of milliseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 50 days.*/
+  if(buttonState == HIGH && millis() - time > debounce) { /*millis() function to keep track of the time passed since the button was pressed*/
     if(LEDstate == HIGH){
     LEDstate = LOW;
     }else{

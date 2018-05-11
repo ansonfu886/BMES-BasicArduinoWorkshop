@@ -322,6 +322,9 @@ void loop() {
 ```
 
 ### 4.2 Activity 2: Press and hold to turn on LED
+In this activity, the pushbutton is used to turn the LED on when the button is pressed. How this
+works is the Arduino reads the input on one pin, then changes the output on another pin to turn
+the LED on or off.
 ![switch](image/Breadboard/Switchbreadboard.jpg)
 ```C++
 const int buttonPin = 2;     // the number of the pushbutton pin
@@ -354,3 +357,30 @@ void loop() {
 ```
 
 ### 4.3 Activity 3: Press to turn on LED, press to turn off LED
+This activity demonstrates how to change the state of a pin based on input from another. Also,
+the concept of button debouncing is introduced. 
+```C++
+int buttonPin = 2;
+int LEDPin = 13;
+int LEDstate = LOW;
+int buttonState;
+long time = 0;
+long debounce = 200;
+
+void setup() {
+  pinMode(buttonPin, INPUT);
+  pinMode(LEDPin, OUTPUT);
+}
+void loop() {
+  buttonState = digitalRead(buttonPin);
+  if(buttonState == HIGH && millis() - time > debounce) { /*millis():Returns the number of milliseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 50 days.*/
+    if(LEDstate == HIGH){
+    LEDstate = LOW;
+    }else{
+    LEDstate = HIGH;
+    }
+    time = millis();
+  }
+digitalWrite(LEDPin, LEDstate);
+}
+```

@@ -387,3 +387,35 @@ digitalWrite(LEDPin, LEDstate);
 ### 4.4 Activity 4: LED Ring pattern
 In this activity, the serial monitor is used to control the rate at which the LED ring lights up.
 ![switch](image/Breadboard/3LED.jpg)
+```C+
+int timer = 500;
+int ledPins[] = {2,3,4};
+int pinCount = 3;
+int speedArray[] = {200,500,1000};
+String incomingByte = "";
+void setup() {
+Serial.begin(9600);
+for (int PinNo = 0; PinNo < pinCount; PinNo++) {
+pinMode(ledPins[PinNo], OUTPUT);
+}
+}
+void loop() {
+startLedRing();
+if (Serial.available() > 0) {
+incomingByte = Serial.readString();
+Serial.print("Delay set to: ");
+Serial.println(speedArray[incomingByte.toInt()]);
+setSpeed(incomingByte.toInt());
+}
+}
+void startLedRing(){
+for (int thisPin = 0; thisPin < pinCount; thisPin++) {
+digitalWrite(ledPins[thisPin], HIGH);
+delay(timer);
+digitalWrite(ledPins[thisPin], LOW);
+}
+}
+void setSpeed(int speedCount) {
+timer = speedArray[speedCount];
+}
+```

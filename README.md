@@ -365,7 +365,7 @@ int LEDPin = 13;
 int LEDstate = LOW;
 int buttonState;
 long time = 0;
-long debounce = 200;
+long debounce = 200; //checking twice in a short period  of time(200) to make sure the pushbutton is definitely pressed 
 
 void setup() {
   pinMode(buttonPin, INPUT);
@@ -384,3 +384,6 @@ void loop() {
 digitalWrite(LEDPin, LEDstate);
 }
 ```
+### 4.4 Activity 4: LED Ring pattern
+In this activity, the serial monitor is used to control the rate at which the LED ring lights up.
+![switch](image/Breadboard/3LED.jpg)

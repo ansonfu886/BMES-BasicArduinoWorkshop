@@ -49,7 +49,7 @@ as its programming language and contains various libraries catered to the Arduin
 ## Step 2 - Electronic Prototyping
 
 ### 2.1 Electronic Components
-#### 1. Diodes: Current passing through a diode can only go in one direction, called the forward direction. Current trying to flow the reverse direction is blocked. Diodes have polarity, so do take of the polarity when connecting them up. </br>E.g. Light Emitting Diode(LED): 
+#### 1. Diodes: Current passing through a diode can only go in one direction, called the forward direction. Current trying to flow the reverse direction is blocked. Diodes have polarity, so take note of the polarity when connecting them up. </br>E.g. Light Emitting Diode(LED): 
 ![LED](image/Diode.png)</br>
 #### 2. Resistors : To reduce current flow, adjust signal levels and to divide voltages.</br>
 ![resistor](image/Resistor.png)</br>

@@ -279,35 +279,35 @@ void loop() {
 In this activity, we will use Pulse Width Modulation, or PWM, to control the brightness of the
 LED. By varying the brightness of the LED continuously, a fading effect can be created.
 ```C++
-const int LEDpin = ...;
+const int LEDpin = 3; // the led is attached to PWM pin 3
 
 void setup() {
-  pinMode(...);
+  pinMode(LEDpin, OUTPUT);
   }
 
 void loop() {
-  for (int ...){
-  analogWrite(...);  //conditions: i as brightness,  maximum brightness is 255
+  for (int i = 0; i < 255; i++){
+  analogWrite(LEDpin, i);  //conditions: i as brightness,  maximum brightness is 255
   delay(5);
   }
-  for (...){
-  analogWrite(...);
+  for (int i = 255; i > 0; i--){
+  analogWrite(LEDpin, i);
   delay(5);
   }
 }
 ```
 #### Alternatively
 ```C++
-int LEDpin = ...;           
+int LEDpin = 3;         // the LED is attached to PWM pin 3  
 int brightness = 0;     // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
 
 void setup() {
-  pinMode(...);
+  pinMode(LEDpin, OUTPUT);
 }
 
 void loop() {
-  analogWrite(...);
+  analogWrite(LEDpin, brightness);
 
   // change the brightness for next time through the loop:
   brightness = brightness + fadeAmount;
